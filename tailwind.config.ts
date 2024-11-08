@@ -77,6 +77,9 @@ export default {
           '950': 'var(--danger-950)',
         },
       },
+      fontWeight: {
+        bold: '600',
+      },
     },
   },
   plugins: [],
