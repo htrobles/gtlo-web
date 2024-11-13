@@ -1,12 +1,10 @@
+import Hero from '@/components/Hero/Hero';
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div>
-      <header>
-        <h1>Header</h1>
-      </header>
-      <div className="font-bold">Hero</div>
+    <div className="container mx-auto p-4">
+      <Hero />
       <div>Events</div>
       <div>Ministries</div>
       <div>Updates</div>

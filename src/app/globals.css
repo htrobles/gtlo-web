@@ -95,6 +95,7 @@ h4,
 h5 {
   font-family: 'Koulen', sans-serif;
   letter-spacing: initial;
+  @apply leading-none;
 }
 
 h1 {
@@ -114,5 +115,5 @@ h4 {
 }
 
 h5 {
-  font-size: 20rem;
+  font-size: 1.25rem;
 }
