@@ -40,7 +40,7 @@ const MINISTRIES = [
 
 export default function HomeMinistries() {
   return (
-    <div className='py-12 bg-gray-50'>
+    <section className='py-12'>
       <div className='container mx-auto space-y-12'>
         <h2>Ministries</h2>
         <ul className='grid xl:grid-cols-2 gap-8'>
@@ -79,6 +79,6 @@ export default function HomeMinistries() {
           Learn more about our ministries
         </button>
       </div>
-    </div>
+    </section>
   );
 }
