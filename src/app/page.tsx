@@ -1,15 +1,15 @@
-import Hero from '@/components/Hero/Hero';
-import Image from 'next/image';
+import Hero from '@/components/home/Hero/Hero';
+import HomeEvents from '@/components/home/HomeEvents/HomeEvents';
 
 export default function Home() {
   return (
-    <div className="container mx-auto p-4">
+    <>
       <Hero />
-      <div>Events</div>
+      <HomeEvents />
       <div>Ministries</div>
       <div>Updates</div>
       <div>Contact</div>
       <footer>Footer</footer>
-    </div>
+    </>
   );
 }

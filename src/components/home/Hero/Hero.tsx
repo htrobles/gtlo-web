@@ -1,11 +1,10 @@
-import Image from 'next/image';
 import HeroImages from './HeroImages';
 
 export default function Hero() {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 items-center py-12">
+    <div className='container mx-auto flex flex-col lg:flex-row gap-8 items-center py-12 px-4'>
       <HeroImages />
-      <div className="flex-1 space-y-8 lg:order-1">
+      <div className='flex-1 space-y-8 lg:order-1'>
         <h1>
           YOUR FAMILY
           <br />
@@ -19,13 +18,13 @@ export default function Hero() {
           deleniti reiciendis, sunt corporis ad cum cumque ullam saepe, dolores
           ut quam numquam earum ipsam libero velit.
         </p>
-        <div className="flex">
+        <div className='flex'>
           <input
-            type="text"
-            className="border border-gray-300 w-full p-2 rounded-tl-lg rounded-bl-lg"
-            placeholder="Enter e-mail address"
+            type='text'
+            className='border border-gray-300 w-full p-2 rounded-tl-lg rounded-bl-lg'
+            placeholder='Enter e-mail address'
           />
-          <button className="bg-primary-400 px-8 py-4 text-white rounded-tr-lg rounded-br-lg">
+          <button className='bg-primary-400 px-8 py-4 text-white rounded-tr-lg rounded-br-lg'>
             Send
           </button>
         </div>
