@@ -1,4 +1,5 @@
 import Hero from '@/components/home/Hero/Hero';
+import HomeMinistries from '@/components/home/Hero/HomeMinistries';
 import HomeEvents from '@/components/home/HomeEvents/HomeEvents';
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <HomeEvents />
-      <div>Ministries</div>
+      <HomeMinistries />
       <div>Updates</div>
       <div>Contact</div>
       <footer>Footer</footer>

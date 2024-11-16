@@ -26,7 +26,7 @@ const links = [
 export default function Header() {
   return (
     <header className='bg-white sticky top-0'>
-      <div className='container mx-auto flex justify-between items-center p-4'>
+      <div className='container mx-auto flex justify-between items-center py-4'>
         <Image
           src='/gospel-trend-logo_london-horizontal 4.svg'
           width={136}
@@ -42,7 +42,7 @@ export default function Header() {
             ))}
           </ul>
           <button className='bg-primary-400 text-white px-12 py-4 rounded-md font-bold'>
-            Connect with Us
+            Connect
           </button>
         </div>
       </div>
