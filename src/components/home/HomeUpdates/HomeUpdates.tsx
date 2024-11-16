@@ -19,6 +19,24 @@ const SAMPLE_UPDATES = [
     body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestias ea delectus id. Vel at eos alias sit atque? Neque, quam nihil, velit ut illo inventore tempore harum saepe incidunt, earum similique facere. Similique sapiente molestias sit consequatur, sunt velit, tempore laudantium doloremque deserunt at laborum distinctio officiis harum error voluptas nam iure cupiditate. Laudantium eius autem commodi, saepe provident iure consectetur ipsam corporis pariatur, vero animi, inventore libero assumenda sed accusantium nostrum id ipsum doloremque modi quam iusto! Dolore tenetur deserunt reprehenderit? Nobis veniam eos aliquid velit voluptatibus assumenda ad tempora voluptates, dignissimos at minus quis. Sapiente, aliquid quo!',
     image: 'https://picsum.photos/seed/update-3/300/300',
   },
+  {
+    id: '4',
+    title: 'Sample Update 4',
+    body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestias ea delectus id. Vel at eos alias sit atque? Neque, quam nihil, velit ut illo inventore tempore harum saepe incidunt, earum similique facere. Similique sapiente molestias sit consequatur, sunt velit, tempore laudantium doloremque deserunt at laborum distinctio officiis harum error voluptas nam iure cupiditate. Laudantium eius autem commodi, saepe provident iure consectetur ipsam corporis pariatur, vero animi, inventore libero assumenda sed accusantium nostrum id ipsum doloremque modi quam iusto! Dolore tenetur deserunt reprehenderit? Nobis veniam eos aliquid velit voluptatibus assumenda ad tempora voluptates, dignissimos at minus quis. Sapiente, aliquid quo!',
+    image: 'https://picsum.photos/seed/update-4/300/300',
+  },
+  {
+    id: '5',
+    title: 'Sample Update 5',
+    body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestias ea delectus id. Vel at eos alias sit atque? Neque, quam nihil, velit ut illo inventore tempore harum saepe incidunt, earum similique facere. Similique sapiente molestias sit consequatur, sunt velit, tempore laudantium doloremque deserunt at laborum distinctio officiis harum error voluptas nam iure cupiditate. Laudantium eius autem commodi, saepe provident iure consectetur ipsam corporis pariatur, vero animi, inventore libero assumenda sed accusantium nostrum id ipsum doloremque modi quam iusto! Dolore tenetur deserunt reprehenderit? Nobis veniam eos aliquid velit voluptatibus assumenda ad tempora voluptates, dignissimos at minus quis. Sapiente, aliquid quo!',
+    image: 'https://picsum.photos/seed/update-5/300/300',
+  },
+  {
+    id: '6',
+    title: 'Sample Update 6',
+    body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestias ea delectus id. Vel at eos alias sit atque? Neque, quam nihil, velit ut illo inventore tempore harum saepe incidunt, earum similique facere. Similique sapiente molestias sit consequatur, sunt velit, tempore laudantium doloremque deserunt at laborum distinctio officiis harum error voluptas nam iure cupiditate. Laudantium eius autem commodi, saepe provident iure consectetur ipsam corporis pariatur, vero animi, inventore libero assumenda sed accusantium nostrum id ipsum doloremque modi quam iusto! Dolore tenetur deserunt reprehenderit? Nobis veniam eos aliquid velit voluptatibus assumenda ad tempora voluptates, dignissimos at minus quis. Sapiente, aliquid quo!',
+    image: 'https://picsum.photos/seed/update-6/300/300',
+  },
 ];
 
 export default function HomeUpdates() {
@@ -26,7 +44,7 @@ export default function HomeUpdates() {
     <section className='bg-gray-50'>
       <div className='container py-12 mx-auto space-y-12'>
         <h2>Updates</h2>
-        <ul className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+        <ul className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4'>
           {SAMPLE_UPDATES.map(({ id, title, body, image }) => (
             <li key={id}>
               <div className='bg-white border border-gray-50 rounded-lg overflow-hidden shadow-lg'>
@@ -37,9 +55,9 @@ export default function HomeUpdates() {
                   alt={title}
                   className='aspect-video w-full object-cover object-center'
                 />
-                <div className='p-8 space-y-4'>
-                  <h4>{title}</h4>
-                  <p className='line-clamp-4'>{body}</p>
+                <div className='p-6 space-y-4'>
+                  <h4 className='line-clamp-1'>{title}</h4>
+                  <p className='line-clamp-6'>{body}</p>
                   <button className='px-8 py-4 bg-black text-white rounded-md w-full'>
                     Read more
                   </button>
