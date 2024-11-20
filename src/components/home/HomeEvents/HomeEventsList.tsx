@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import HomeEventItems from './HomeEventItems';
+import { Button } from '@/components/ui/button';
 
 export interface HomeEventItemProps {
   id: string;
@@ -78,9 +79,9 @@ export default function HomeEventsList() {
           />
         ))}
       </ul>
-      <button className='border border-white py-4 px-8 text-white rounded-lg hover:bg-white hover:text-black transition-colors w-full'>
+      <Button variant='ghostOutline' size='lg'>
         View all upcoming events
-      </button>
+      </Button>
     </div>
   );
 }

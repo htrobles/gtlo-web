@@ -1,6 +1,37 @@
+'use client';
+
 import HeroImages from './HeroImages';
+import { z } from 'zod';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Button } from '@/components/ui/button';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+
+const formSchema = z.object({
+  email: z.string().email().min(5),
+});
 
 export default function Hero() {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: '',
+    },
+  });
+
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    // Do something with the form values.
+    // ✅ This will be type-safe and validated.
+    console.log(values);
+  }
+
   return (
     <div className='container mx-auto flex flex-col lg:flex-row gap-x-12 gap-y-8 items-center py-12'>
       <HeroImages />
@@ -21,15 +52,30 @@ export default function Hero() {
           deleniti reiciendis, sunt corporis ad cum cumque ullam saepe, dolores
           ut quam numquam earum ipsam libero velit.
         </p>
-        <div className='flex'>
-          <input
-            type='text'
-            className='border border-gray-300 w-full p-2 rounded-tl-lg rounded-bl-lg'
-            placeholder='Enter e-mail address'
-          />
-          <button className='bg-primary-400 px-8 py-4 text-white rounded-tr-lg rounded-br-lg'>
-            Send
-          </button>
+        <div>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className='flex'>
+              <FormField
+                control={form.control}
+                name='email'
+                render={({ field }) => (
+                  <FormItem className='max-w-96 w-full'>
+                    <FormControl>
+                      <Input
+                        placeholder='Email Address'
+                        {...field}
+                        className='rounded-r-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:bg-gray-50'
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <Button type='submit' className='rounded-l-none'>
+                Submit
+              </Button>
+            </form>
+          </Form>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 const links = [
   {
@@ -41,9 +42,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <button className='bg-primary-400 text-white px-12 py-4 rounded-md font-bold'>
-            Connect
-          </button>
+          <Button>Connect with Us</Button>
         </div>
       </div>
     </header>

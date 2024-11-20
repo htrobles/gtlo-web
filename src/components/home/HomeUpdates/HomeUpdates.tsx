@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 const SAMPLE_UPDATES = [
@@ -58,9 +59,9 @@ export default function HomeUpdates() {
                 <div className='p-6 space-y-4'>
                   <h4 className='line-clamp-1'>{title}</h4>
                   <p className='line-clamp-6'>{body}</p>
-                  <button className='px-8 py-4 bg-black text-white rounded-md w-full'>
+                  <Button variant='black' className='w-full'>
                     Read more
-                  </button>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -75,9 +76,7 @@ export default function HomeUpdates() {
             officia inventore laborum, nihil, blanditiis deserunt hic porro
             laboriosam cupiditate saepe ducimus tenetur!
           </p>
-          <button className='border border-foreground shrink-0 px-8 py-4 rounded-md'>
-            View all news
-          </button>
+          <Button variant='outlineBlack'>View all news</Button>
         </div>
       </div>
     </section>

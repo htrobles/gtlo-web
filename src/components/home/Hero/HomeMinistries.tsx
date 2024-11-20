@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 const MINISTRIES = [
@@ -52,15 +53,20 @@ export default function HomeMinistries() {
                 key={title}
                 className='grid grid-cols-1 md:grid-cols-5 md:gap-x-4 gap-y-4'
               >
-                <Image
-                  src={image}
-                  alt={title}
-                  width={300}
-                  height={300}
-                  className={`aspect-video md:aspect-square rounded-lg w-full col-span-2 object-cover object-center ${
+                <div
+                  className={`col-span-2 ${
                     isLeft ? 'md:order-1' : 'md:order-2'
                   } xl:order-1`}
-                />
+                >
+                  <h4 className='md:hidden mb-4'>{title}</h4>
+                  <Image
+                    src={image}
+                    alt={title}
+                    width={300}
+                    height={300}
+                    className={`aspect-video md:aspect-square rounded-lg w-full object-cover object-center`}
+                  />
+                </div>
                 <div
                   className={`col-span-3 ${
                     isLeft ? 'md:order-2' : 'md:order-1'
@@ -68,16 +74,14 @@ export default function HomeMinistries() {
                     isLeft ? 'md:text-left' : 'md:text-right'
                   } xl:order-2 xl:text-left`}
                 >
-                  <h4 className='mb-4'>{title}</h4>
+                  <h4 className='hidden md:block mb-4'>{title}</h4>
                   <p>{description}</p>
                 </div>
               </div>
             );
           })}
         </ul>
-        <button className='border-2 border-foreground px-8 py-4 rounded-xl hover:bg-foreground hover:text-white transition-colors'>
-          Learn more about our ministries
-        </button>
+        <Button variant='outlineBlack'>Learn more about our ministries</Button>
       </div>
     </section>
   );
