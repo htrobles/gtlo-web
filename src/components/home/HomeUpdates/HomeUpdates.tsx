@@ -67,7 +67,7 @@ export default function HomeUpdates() {
             </li>
           ))}
         </ul>
-        <div className='flex gap-8 items-start'>
+        <div className='flex flex-col md:flex-row gap-8 items-start'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut
             ratione dolor veniam atque, dolorum a rem. Nisi obcaecati quisquam
@@ -76,7 +76,9 @@ export default function HomeUpdates() {
             officia inventore laborum, nihil, blanditiis deserunt hic porro
             laboriosam cupiditate saepe ducimus tenetur!
           </p>
-          <Button variant='outlineBlack'>View all news</Button>
+          <Button variant='outlineBlack' className='w-full md:w-auto'>
+            View all news
+          </Button>
         </div>
       </div>
     </section>

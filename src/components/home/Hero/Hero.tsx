@@ -45,12 +45,25 @@ export default function Hero() {
           YOUR FAMILY AWAY FROM HOME
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-          suscipit libero excepturi ratione doloremque exercitationem officia,
-          ipsum enim eum aliquam quibusdam assumenda doloribus tempore facere
-          aperiam, veniam dicta! Tenetur maxime, consequuntur dicta facere
-          deleniti reiciendis, sunt corporis ad cum cumque ullam saepe, dolores
-          ut quam numquam earum ipsam libero velit.
+          Welcome to Gospel Trend Church, where our mission is simple: &quot;Win
+          souls and make disciples.&quot; Located in the heart of London, we are
+          a vibrant community of believers dedicated to living out the love of
+          Christ in practical, meaningful ways. At Gospel Trend Church, we
+          believe in the power of God&apos;s love to transform lives, and we are
+          passionate about sharing that love with others.
+        </p>
+        <p>
+          Our core values are rooted in two guiding principles: Loving God and
+          Loving People. This means that everything we do—from worship to
+          outreach—is centered on building a deeper relationship with God and
+          extending His love to everyone around us. Whether you&apos;re new to
+          faith or seeking a community to grow spiritually, Gospel Trend Church
+          is a place where you&apos;ll find encouragement, support, and a family
+          in Christ.
+        </p>
+        <p>
+          Join us as we strive to make a difference in our city, one soul at a
+          time.
         </p>
         <div>
           <Form {...form}>
@@ -64,7 +77,7 @@ export default function Hero() {
                       <Input
                         placeholder='Email Address'
                         {...field}
-                        className='rounded-r-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:bg-gray-50'
+                        className='rounded-r-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:bg-gray-50 h-11'
                       />
                     </FormControl>
                     <FormMessage />

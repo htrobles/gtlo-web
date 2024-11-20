@@ -22,21 +22,21 @@ const MINISTRIES = [
     image: 'https://picsum.photos/seed/4/200/200',
     description: `Our Media Ministry is dedicated to sharing the gospel and the love of Jesus Christ through various forms of media. By producing high-quality Christian content and materials, we aim to spread the message of Christ and promote values rooted in His teachings. Whether it’s through videos, social media, or other digital platforms, our team is passionate about creating inspiring and impactful content that reaches people wherever they are.`,
   },
-  // {
-  //   title: 'USHERING',
-  //   image: 'https://picsum.photos/seed/5/200/200',
-  //   description: `Our Ushering Ministry at Gospel Trend Church is dedicated to creating a welcoming, warm environment where everyone feels at home. We believe every encounter matters, and our team is committed to making each person who walks through our doors feel valued and embraced. Through genuine smiles, friendly greetings, and helpful assistance, our ushers ensure a positive experience that reflects God’s love.`,
-  // },
-  // {
-  //   title: 'LOGISTICS',
-  //   image: 'https://picsum.photos/seed/6/200/200',
-  //   description: `Our Outreach Ministry at Gospel Trend Church is committed to sharing the gospel and the love of Jesus Christ across campuses and in the unreached communities of our city. We believe in reaching people right where they are, bringing hope and support through practical acts of service, encouragement, and faith. By partnering with like-minded organizations, we extend our impact to help, bless, and meet the needs of those we encounter.`,
-  // },
-  // {
-  //   title: 'KITCHEN MINISTRY',
-  //   image: 'https://picsum.photos/seed/7/200/200',
-  //   description: `Our Kitchen Ministry is all about sharing nutritious, delicious meals that bring people together and foster genuine fellowship. We believe that gathering around the table not only nourishes the body but also strengthens relationships within our church family. Our team is passionate about preparing food that encourages connection, joy, and meaningful conversation.`,
-  // },
+  {
+    title: 'USHERING',
+    image: 'https://picsum.photos/seed/5/200/200',
+    description: `Our Ushering Ministry at Gospel Trend Church is dedicated to creating a welcoming, warm environment where everyone feels at home. We believe every encounter matters, and our team is committed to making each person who walks through our doors feel valued and embraced. Through genuine smiles, friendly greetings, and helpful assistance, our ushers ensure a positive experience that reflects God’s love.`,
+  },
+  {
+    title: 'LOGISTICS',
+    image: 'https://picsum.photos/seed/6/200/200',
+    description: `Our Outreach Ministry at Gospel Trend Church is committed to sharing the gospel and the love of Jesus Christ across campuses and in the unreached communities of our city. We believe in reaching people right where they are, bringing hope and support through practical acts of service, encouragement, and faith. By partnering with like-minded organizations, we extend our impact to help, bless, and meet the needs of those we encounter.`,
+  },
+  {
+    title: 'KITCHEN MINISTRY',
+    image: 'https://picsum.photos/seed/7/200/200',
+    description: `Our Kitchen Ministry is all about sharing nutritious, delicious meals that bring people together and foster genuine fellowship. We believe that gathering around the table not only nourishes the body but also strengthens relationships within our church family. Our team is passionate about preparing food that encourages connection, joy, and meaningful conversation.`,
+  },
 ];
 
 export default function HomeMinistries() {
