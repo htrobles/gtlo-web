@@ -33,7 +33,10 @@ export default function Hero() {
   }
 
   return (
-    <div className='container mx-auto flex flex-col lg:flex-row gap-x-12 gap-y-8 items-center py-12'>
+    <section
+      id='hero'
+      className='container mx-auto flex flex-col lg:flex-row gap-x-12 gap-y-8 items-center py-12'
+    >
       <HeroImages />
       <div className='flex-1 space-y-4 lg:order-1'>
         <h1 className='text-4xl sm:hidden lg:block lg:text-6xl'>
@@ -91,6 +94,6 @@ export default function Hero() {
           </Form>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

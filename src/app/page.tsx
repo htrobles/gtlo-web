@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer/Footer';
 import Hero from '@/components/home/Hero/Hero';
 import HomeMinistries from '@/components/home/Hero/HomeMinistries';
-import HomeContact from '@/components/home/HomeContact/HomeContact';
+import HomeConnect from '@/components/home/HomeConnect/HomeConnect';
 // import HomeEvents from '@/components/home/HomeEvents/HomeEvents';
 // import HomeUpdates from '@/components/home/HomeUpdates/HomeUpdates';
 
@@ -12,7 +12,7 @@ export default function Home() {
       {/* <HomeEvents /> */}
       <HomeMinistries />
       {/* <HomeUpdates /> */}
-      <HomeContact />
+      <HomeConnect />
       <Footer />
     </>
   );

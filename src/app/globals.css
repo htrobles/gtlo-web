@@ -78,6 +78,10 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.05em;

@@ -4,19 +4,19 @@ import { Button } from '@/components/ui/button';
 const links = [
   {
     key: 'about-us',
-    href: '#about-us',
+    href: '#hero',
     label: 'About Us',
   },
-  {
-    key: 'events',
-    href: '#events',
-    label: 'Events',
-  },
-  {
-    key: 'updates',
-    href: '#updates',
-    label: 'Updates',
-  },
+  // {
+  //   key: 'events',
+  //   href: '#events',
+  //   label: 'Events',
+  // },
+  // {
+  //   key: 'updates',
+  //   href: '#updates',
+  //   label: 'Updates',
+  // },
   {
     key: 'ministries',
     href: '#ministries',
@@ -38,11 +38,18 @@ export default function Header() {
           <ul className='hidden lg:flex gap-6 items-center'>
             {links.map(({ key, href, label }) => (
               <li key={key}>
-                <a href={href}>{label}</a>
+                <a
+                  href={href}
+                  className='py-2 px-4 hover:bg-foreground hover:text-white rounded-sm transition-colors '
+                >
+                  {label}
+                </a>
               </li>
             ))}
           </ul>
-          <Button>Connect with Us</Button>
+          <a href='#connect'>
+            <Button>Connect with Us</Button>
+          </a>
         </div>
       </div>
     </header>

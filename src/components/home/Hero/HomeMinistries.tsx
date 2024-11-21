@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 const MINISTRIES = [
@@ -41,7 +41,7 @@ const MINISTRIES = [
 
 export default function HomeMinistries() {
   return (
-    <section className='py-12 bg-gray-50'>
+    <section id='ministries' className='py-12 bg-gray-50'>
       <div className='container mx-auto space-y-12'>
         <h2>Ministries</h2>
         <ul className='grid xl:grid-cols-2 gap-8'>
@@ -81,7 +81,7 @@ export default function HomeMinistries() {
             );
           })}
         </ul>
-        <Button variant='outlineBlack'>Learn more about our ministries</Button>
+        {/* <Button variant='outlineBlack'>Learn more about our ministries</Button> */}
       </div>
     </section>
   );

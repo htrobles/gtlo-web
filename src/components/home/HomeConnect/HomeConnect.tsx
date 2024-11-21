@@ -27,7 +27,7 @@ const formSchema = z.object({
     .min(2, { message: 'Please let us know how we can help you' }),
 });
 
-export default function HomeContact() {
+export default function HomeConnect() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,7 +44,7 @@ export default function HomeContact() {
   }
 
   return (
-    <div className='container mx-auto py-12 space-y-12'>
+    <section id='connect' className='container mx-auto py-12 space-y-12'>
       <h2>Connect with Us</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
         <Form {...form}>
@@ -123,6 +123,6 @@ export default function HomeContact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
