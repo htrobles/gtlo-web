@@ -26,7 +26,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className='bg-white sticky top-0'>
+    <header className='bg-white sticky top-0 z-10'>
       <div className='container mx-auto flex justify-between items-center py-4'>
         <Image
           src='/gospel-trend-logo_london-horizontal 4.svg'

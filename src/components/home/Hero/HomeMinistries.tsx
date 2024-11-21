@@ -58,7 +58,7 @@ export default function HomeMinistries() {
                     isLeft ? 'md:order-1' : 'md:order-2'
                   } xl:order-1`}
                 >
-                  <h4 className='md:hidden mb-4'>{title}</h4>
+                  <h3 className='md:hidden mb-4'>{title}</h3>
                   <Image
                     src={image}
                     alt={title}
@@ -74,7 +74,7 @@ export default function HomeMinistries() {
                     isLeft ? 'md:text-left' : 'md:text-right'
                   } xl:order-2 xl:text-left`}
                 >
-                  <h4 className='hidden md:block mb-4'>{title}</h4>
+                  <h3 className='hidden md:block mb-4'>{title}</h3>
                   <p>{description}</p>
                 </div>
               </div>
