@@ -41,7 +41,7 @@ const MINISTRIES = [
 
 export default function HomeMinistries() {
   return (
-    <section className='py-12'>
+    <section className='py-12 bg-gray-50'>
       <div className='container mx-auto space-y-12'>
         <h2>Ministries</h2>
         <ul className='grid xl:grid-cols-2 gap-8'>
