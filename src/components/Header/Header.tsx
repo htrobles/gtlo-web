@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import gtloLogo from '/public/gtlo-logo-horizontal.png';
 
 const links = [
   {
@@ -29,10 +30,9 @@ export default function Header() {
     <header className='bg-white sticky top-0 z-10'>
       <div className='container mx-auto flex justify-between items-center py-4'>
         <Image
-          src='/gospel-trend-logo_london-horizontal 4.svg'
-          width={136}
-          height={50}
-          alt='Picture of the author'
+          src={gtloLogo}
+          alt='GospelTrend London Logo'
+          className='max-h-[50px] w-fit object-contain grow-0 shrink-0'
         />
         <div className='flex gap-6'>
           <ul className='hidden lg:flex gap-6 items-center'>
