@@ -47,10 +47,10 @@ const MINISTRIES = [
 
 export default function HomeMinistries() {
   return (
-    <section id='ministries' className='py-12 bg-gray-50'>
-      <div className='container mx-auto space-y-12'>
+    <section id="ministries" className="py-12 bg-gray-50">
+      <div className="container mx-auto space-y-12">
         <h2>Ministries</h2>
-        <ul className='grid xl:grid-cols-2 gap-8'>
+        <ul className="grid xl:grid-cols-2 gap-8">
           {MINISTRIES.map(({ title, description, image }, i) => {
             const isLeft = i % 2 === 0;
 
@@ -63,14 +63,14 @@ export default function HomeMinistries() {
             return (
               <div
                 key={title}
-                className='grid grid-cols-1 md:grid-cols-5 md:gap-x-4 gap-y-4'
+                className="grid grid-cols-1 md:grid-cols-5 md:gap-x-4 gap-y-4"
               >
                 <div
                   className={`col-span-2 ${
                     isLeft ? 'md:order-1' : 'md:order-2'
                   } xl:order-1`}
                 >
-                  <h3 className='md:hidden mb-4'>{title}</h3>
+                  <h3 className="md:hidden mb-4">{title}</h3>
                   <Image
                     src={image}
                     alt={title}
@@ -82,12 +82,12 @@ export default function HomeMinistries() {
                     isLeft ? 'md:order-2' : 'md:order-1'
                   } ${
                     isLeft
-                      ? 'md:items-start text-left'
-                      : 'md:items-end text-right'
+                      ? 'md:items-start md:text-left'
+                      : 'md:items-end md:text-right'
                   } xl:order-2 xl:items-start lg:text-left`}
                 >
-                  <h3 className='hidden md:block mb-4'>{title}</h3>
-                  <p className='md:max-w-96 xl:max-w-none'>{description}</p>
+                  <h3 className="hidden md:block mb-4">{title}</h3>
+                  <p className="md:max-w-96 xl:max-w-none">{description}</p>
                 </div>
               </div>
             );

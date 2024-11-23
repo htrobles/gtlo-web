@@ -27,28 +27,28 @@ const links = [
 
 export default function Header() {
   return (
-    <header className='bg-white sticky top-0 z-10'>
-      <div className='container mx-auto flex justify-between items-center py-4'>
+    <header className="bg-white sticky top-0 z-10">
+      <div className="container mx-auto flex justify-between items-center py-4">
         <Image
           src={gtloLogo}
-          alt='GospelTrend London Logo'
-          className='max-h-[50px] w-fit object-contain grow-0 shrink-0'
+          alt="GospelTrend London Logo"
+          className="max-h-[50px] max-w-[200px] w-fit object-contain grow-0 shrink-0"
         />
-        <div className='flex gap-6'>
-          <ul className='hidden lg:flex gap-6 items-center'>
+        <div className="flex gap-6">
+          <ul className="hidden lg:flex gap-6 items-center">
             {links.map(({ key, href, label }) => (
               <li key={key}>
                 <a
                   href={href}
-                  className='py-2 px-4 hover:bg-foreground hover:text-white rounded-sm transition-colors '
+                  className="py-2 px-4 hover:bg-foreground hover:text-white rounded-sm transition-colors "
                 >
                   {label}
                 </a>
               </li>
             ))}
           </ul>
-          <a href='#connect'>
-            <Button>Connect with Us</Button>
+          <a href="#connect">
+            <Button>Connect</Button>
           </a>
         </div>
       </div>
