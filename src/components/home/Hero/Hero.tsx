@@ -13,24 +13,43 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-
-const formSchema = z.object({
-  email: z.string().email().min(5),
-});
+import sendConnectEmail from '@/lib/actions/sendConnectEmail';
+import { emailConnectFormSchema } from '@/models/formSchemas/connectFormSchema';
+import { useToast } from '@/hooks/use-toast';
+import { ToastAction } from '@/components/ui/toast';
 
 export default function Hero() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const { toast } = useToast();
+
+  const form = useForm<z.infer<typeof emailConnectFormSchema>>({
+    resolver: zodResolver(emailConnectFormSchema),
     defaultValues: {
       email: '',
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+  const onSubmit = async (values: z.infer<typeof emailConnectFormSchema>) => {
+    const res = await sendConnectEmail(values);
+    if (res.error) {
+      console.log(res.error);
+      toast({
+        variant: 'destructive',
+        title: 'Sorry. Something went wrong.',
+        description: 'There was a problem with your request.',
+        action: <ToastAction altText='Try again'>Try again</ToastAction>,
+      });
+    } else {
+      toast({
+        variant: 'default',
+        title: 'Thank you for reaching out to us!',
+        description:
+          'Our Connect Team will contact you as soon as they read your message.',
+        action: <ToastAction altText='Confirm'>Confirm</ToastAction>,
+      });
+
+      form.reset();
+    }
+  };
 
   return (
     <section

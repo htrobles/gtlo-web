@@ -10,3 +10,7 @@ export const connectFormSchema = z.object({
     .string()
     .min(2, { message: 'Please let us know how we can help you' }),
 });
+
+export const emailConnectFormSchema = z.object({
+  email: z.string().email().min(5),
+});
